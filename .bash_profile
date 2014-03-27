@@ -287,13 +287,6 @@ alias goto_sites='cd ~/Sites'	# goto_sites:     Go To local folder
 #   -------------------------------------------------------------------
 	httpDebug () { /usr/bin/curl $@ -o /dev/null -w "dns: %{time_namelookup} connect: %{time_connect} pretransfer: %{time_pretransfer} starttransfer: %{time_starttransfer} total: %{time_total}\n" ; }
 
-#   Remote Server for tellininteractive.com:  open ssh conection and mysql tunnel
-#   -------------------------------------------------------------------
-	#alias linode_sudo='ssh root@192.81.135.140'
-	alias linode='ssh teller@192.81.135.140 -p 56783'	# linode: 			Connect via SSH
-	alias mytunnelstart='~/./.mysql-tunnel.pl start'	# mytunnelstart:	Open mysql ssh tunnel
-	alias mytunnelstop='~/./.mysql-tunnel.pl stop'		# mytunnelstop:		Close mysql ssh tunnel
-
 #   ---------------------------------------
 #   9.  REMINDERS & NOTES
 #   ---------------------------------------
